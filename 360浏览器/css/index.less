@@ -90,3 +90,57 @@
     }
   }
 }
+// 第四屏
+.section-four{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  .search{
+    overflow: hidden;
+    height: 446px;
+    .top{
+      position: relative;
+      img{
+        transform: translateX(-529px);
+        transition: all 1s linear 0s;
+      }
+      .key{
+        width: 0;
+        height: 22px;
+        background: url("./../images/section4_key.png") no-repeat;
+        position: absolute;
+        left: 20px;
+        top: 25px;
+      }
+    }
+    .bottom{
+      height: 0;
+      overflow: hidden;
+      transition: all 1s linear 4s;
+    }
+  }
+  &.current{
+    .search{
+      .top{
+        img{
+          transform: none;
+        }
+        .key{
+          animation: show 2.5s steps(5) 1.5s forwards;
+        }
+      }
+      .bottom{
+        height: 372px;
+      }
+    }
+  }
+}
+@keyframes show {
+  from{
+    width: 0;
+  }
+  to{
+    width: 99px;
+  }
+}

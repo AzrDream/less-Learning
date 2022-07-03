@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!--
+    <style type="text/less">
+        /*
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .father{
+            width: 300px;
+            height: 300px;
+            background: red;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .son{
+            width: 200px;
+            height: 200px;
+            background: blue;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .center {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .father{
+            width: 300px;
+            height: 300px;
+            background: red;
+            .center;
+            .son{
+                width: 200px;
+                height: 200px;
+                background: blue;
+                .center;
+            }
+        }
+    </style>-->
+<!--    <link rel="stylesheet/less" href="css/index.less">-->
+<!--    <script src="js/less.js"></script>-->
+</head>
+<body>
+<div class="father">
+    <div class="son"></div>
+</div>
+</body>
+</html>

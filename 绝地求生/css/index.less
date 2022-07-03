@@ -150,18 +150,20 @@ body{
         line-height: 88px;
         font-size: 14px;
         font-weight: bold;
-        color: #ccc;
+        a{
+          color: #ccc;
+        }
         a:hover{
-          color: #e69800;
+          color: @baseColor;
         }
         &:nth-child(3) {
           a{
-            color: #e69800;
+            color: @baseColor;
           }
         }
         &:nth-child(4) {
           a{
-            color: #e69800;
+            color: @baseColor;
           }
         }
       }
@@ -171,7 +173,7 @@ body{
       height: 40px;
       line-height: 40px;
       text-align: center;
-      background: #e69800;
+      background: @baseColor;
       margin-top: 24px;
       a{
         font-size: 14px;
@@ -181,8 +183,29 @@ body{
     }
   }
 }
-.footer-in{
-  width: 1200px;
-  height: 160px;
-  margin: 0 auto;
+/*第一屏*/
+.section-one{
+  background: url("./../images/bg_section1.jpg") no-repeat center center;
+  background-size: cover;
+  video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .paly{
+    width: 81px;
+    height: 81px;
+    background: url("./../images/icons.png") no-repeat 0 0;
+    .center();
+    a{
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  img{
+    .hCenter();
+    bottom: 50px;
+  }
 }
+

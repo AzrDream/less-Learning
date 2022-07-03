@@ -1,0 +1,9 @@
+/*.size(@width, @height) when(@width=100px)and(@height=100px) {*/
+.size(@width, @height) when(ispixel(@width)) {
+  width: @width;
+  height: @height;
+}
+div{
+  .size(100px, 100px);
+  background: red;
+}

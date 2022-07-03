@@ -121,7 +121,7 @@ body{
 .nav{
   width: 100%;
   height: 88px;
-  background: #000;
+  background: url("./../images/bg_top.png");
   position: fixed;
   left: 0;
   top: 42px;
@@ -130,7 +130,55 @@ body{
     width: 1200px;
     height: 100%;
     margin: 0 auto;
-    background: pink;
+    h1{
+      height: 100%;
+      a{
+        display: inline-block;
+        height: 100%;
+        line-height: 88px;
+        img{
+          width: 129px;
+          vertical-align: middle;
+        }
+      }
+    }
+    ul{
+      li{
+        float: left;
+        width: 105px;
+        text-align: center;
+        line-height: 88px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #ccc;
+        a:hover{
+          color: #e69800;
+        }
+        &:nth-child(3) {
+          a{
+            color: #e69800;
+          }
+        }
+        &:nth-child(4) {
+          a{
+            color: #e69800;
+          }
+        }
+      }
+    }
+    div{
+      width: 140px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      background: #e69800;
+      margin-top: 24px;
+      a{
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+      }
+    }
   }
 }
 .footer-in{

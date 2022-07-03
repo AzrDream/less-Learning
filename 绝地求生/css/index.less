@@ -387,6 +387,46 @@ body{
     }
   }
 }
+/*第五屏*/
+.section-five{
+  background: url("./../images/bg_section5.jpg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .info{
+    div{
+      width: 375px;
+      height: 82px;
+      background: url("./../images/icons.png") no-repeat;
+      position: relative;
+      &:nth-child(1){
+        background-position: 0px -509px;
+        left: -50px;
+      }
+      &:nth-child(2){
+        background-position: -377px -509px;
+        left: 50px;
+        top: 20px;
+      }
+    }
+
+    .center();
+    p{
+      position: absolute;
+      bottom: -50px;
+      color: #fff;
+    }
+  }
+  .ripple{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+  }
+}
 /*自定义菜单*/
 #myMenu{
   background: url("./../images/menu.png") no-repeat;

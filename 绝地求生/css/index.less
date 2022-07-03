@@ -1,3 +1,52 @@
+/*工具类*/
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix::after{
+  /*设置添加的子元素的内容为空*/
+  content: "";
+  /*设置添加的子元素为块级元素*/
+  display: block;
+  /*设置添加的子元素的高度为0*/
+  height: 0;
+  /*设置添加的子元素看不见*/
+  visibility: hidden;
+  /*给添加的子元素设置clear: both;*/
+  clear: both;
+}
+.clearfix{
+  /*兼容IE6*/
+  *zoom:1;
+}
+.center(){
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.hCenter(){
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.vCenter(){
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@baseColor: #e69800;
+/*网页统一设置*/
+body{
+  font: 12px/1.5 '\5FAE\8F6F\96C5\9ED1', tahoma, '\5b8b\4f53', sans-serif;
+  color: #666;
+  a{
+    color: #666;
+  }
+}
+/*顶部工具条*/
 .toolbar{
   width: 100%;
   height: 40px;
@@ -7,12 +56,66 @@
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 999;
+  z-index: 1999;
   .toolbar-in{
     width: 970px;
     height: 100%;
     margin: 0 auto;
-    background: skyblue;
+    position: relative;
+    li{
+      &:nth-child(1) {
+        width: 220px;
+        height: 40px;
+        background: url("./../images/icons-top.png") no-repeat 0 -40px;
+        position: relative;
+        z-index: 999;
+        a{
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &:nth-child(2) {
+        .big-image{
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: none;
+        }
+      }
+      &:nth-child(2) {
+        &:hover{
+          .big-image{
+            display: block;
+          }
+        }
+      }
+      &:nth-child(3) {
+        line-height: 40px;
+        margin-left: 20px;
+        i{
+          display: inline-block;
+          width: 11px;
+          height: 11px;
+          background: url("./../images/icons-top.png") no-repeat -150px -134px;
+          vertical-align: middle;
+        }
+        a:hover{
+          color: orangered;
+          i{
+            background-position: -170px -134px;
+          }
+        }
+      }
+      &:nth-child(4) {
+        line-height: 40px;
+        padding-left: 25px;
+        background: url("./../images/platform-logo.png") no-repeat left center;
+        a:hover{
+          color: orangered;
+        }
+      }
+    }
   }
 }
 .nav{

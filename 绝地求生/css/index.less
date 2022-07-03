@@ -427,6 +427,50 @@ body{
     top: 70%;
   }
 }
+/*第六屏*/
+.section-six{
+  background: url("./../images/bg_section6.jpg") no-repeat;
+  background-size: cover;
+  .one{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    cursor: pointer;
+    video{
+      width: 450px;
+      height: 450px;
+      border-radius: 50%;
+      .vCenter();
+      right: -460px;
+      display: none;
+    }
+    &:hover{
+      video{
+        display: block;
+      }
+    }
+  }
+  .two{
+    position: absolute;
+    top: 70%;
+    left: 58%;
+    cursor: pointer;
+    video{
+      width: 450px;
+      height: 450px;
+      border-radius: 50%;
+      .vCenter();
+      left: -460px;
+      display: none;
+    }
+    &:hover{
+      video{
+        display: block;
+      }
+    }
+  }
+}
+
 /*自定义菜单*/
 #myMenu{
   background: url("./../images/menu.png") no-repeat;

@@ -1,0 +1,14 @@
+.animate(@name, @time, ...) {
+  transition: @arguments;
+}
+div {
+  width: 200px;
+  height: 200px;
+  background: red;
+  .animate(all,4s,linear,0s);
+}
+div:hover {
+  width: 400px;
+  height: 400px;
+  background: blue;
+}

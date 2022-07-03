@@ -267,7 +267,126 @@ body{
     top: 60%;
   }
 }
-
+/*第四屏*/
+.section-four{
+  .title{
+    width: 727px;
+    height: 81px;
+    background: url("./../images/icons.png") no-repeat 0 -425px;
+    .hCenter();
+    top: 20%;
+  }
+  .weather{
+    position: absolute;
+    left: 20%;
+    bottom: 20%;
+    text-align: center;
+    width: 225px;
+    i{
+      display: block;
+      width: 114px;
+      height: 78px;
+      background: url("./../images/icons.png") no-repeat 0 -768px;
+      margin: 0 auto;
+    }
+    b{
+      font-size: 20px;
+      color: @baseColor;
+    }
+    span{
+      display: block;
+      width: 20px;
+      height: 1px;
+      background: @baseColor;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+    p{
+      color: @baseColor;
+    }
+  }
+  .terrain{
+    position: absolute;
+    left: 70%;
+    bottom: 20%;
+    text-align: center;
+    width: 225px;
+    i{
+      display: block;
+      width: 120px;
+      height: 78px;
+      background: url("./../images/icons.png") no-repeat -113px -686px;
+      margin: 0 auto;
+    }
+    b{
+      font-size: 20px;
+      color: #fff;
+    }
+    span{
+      display: block;
+      width: 20px;
+      height: 1px;
+      background: #fff;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+    p{
+      color: #fff;
+    }
+  }
+  ul{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+    li{
+      float: left;
+      width: 33%;
+      height: 100%;
+      transition: all 0.3s ease-in-out 0s;
+      position: relative;
+      overflow: hidden;
+      background: #000;
+      img{
+        position: absolute;
+        top: 0;
+        transition: all 1s ease-in-out 0.3s;
+        opacity: 0.6;
+      }
+      h3{
+        width: 93px;
+        height: 68px;
+        background: url("./../images/icons.png") no-repeat -238px -685px;
+        .center();
+        transition: all 1s ease-in-out 0.3s;
+      }
+      &:nth-child(1){
+        img{
+          left: -180px;
+        }
+      }
+      &:nth-child(2){
+        width: 34%;
+        img{
+          left: -10%;
+          transition: none;
+        }
+        h3{
+          background-position: -336px -685px;
+        }
+      }
+      &:nth-child(3){
+        float: right;
+        img{
+          right: -180px;
+        }
+        h3{
+          background-position: -433px -685px;
+        }
+      }
+    }
+  }
+}
 /*自定义菜单*/
 #myMenu{
   background: url("./../images/menu.png") no-repeat;

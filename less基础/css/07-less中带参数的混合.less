@@ -1,0 +1,11 @@
+.whc(@w:100px, @h:100px, @c:pink) {
+  width: @w;
+  height: @h;
+  background: @c;
+}
+.box1 {
+  .whc(@h:100px)
+}
+.box2 {
+  .whc(300px, 300px, blue)
+}
